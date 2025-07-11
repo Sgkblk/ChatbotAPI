@@ -1,7 +1,8 @@
 using Chatbot.Application.Repositories;
 using Chatbot.Infrastructure.Data;
+using Chatbot.Infrastructure.Services;
 using Microsoft.EntityFrameworkCore;
- 
+using Chatbot.Application.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +12,7 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddScoped<IAIService, SemanticKernelAIService>();
 
 builder.Services.AddDbContext<PromptDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
