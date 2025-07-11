@@ -1,3 +1,4 @@
+using Chatbot.Application.Repositories;
 using Chatbot.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
  
@@ -13,6 +14,8 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<PromptDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddScoped<IPromptLogRepository, PromptLogRepository>();
 
 
 
