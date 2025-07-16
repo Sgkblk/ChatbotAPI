@@ -5,12 +5,6 @@ VisualStudioVersion = 17.14.36301.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chatbot", "Chatbot.csproj", "{4BB2AD9D-6DD2-483C-AEBA-18FA3CBE9709}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chatbot.Application", "..\Chatbot.Application\Chatbot.Application.csproj", "{E7C94DB6-2C93-4BB9-AFFC-00850385507B}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chatbot.Infrastructure", "..\Chatbot.Infrastructure\Chatbot.Infrastructure.csproj", "{D11D84BC-A97D-407F-A6AE-4C19F046BC52}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chatbot.Domain", "..\Chatbot.Domain\Chatbot.Domain.csproj", "{A930599F-496C-408B-A10B-9406B3902168}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,18 +15,6 @@ Global
 		{4BB2AD9D-6DD2-483C-AEBA-18FA3CBE9709}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4BB2AD9D-6DD2-483C-AEBA-18FA3CBE9709}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4BB2AD9D-6DD2-483C-AEBA-18FA3CBE9709}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E7C94DB6-2C93-4BB9-AFFC-00850385507B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E7C94DB6-2C93-4BB9-AFFC-00850385507B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E7C94DB6-2C93-4BB9-AFFC-00850385507B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E7C94DB6-2C93-4BB9-AFFC-00850385507B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D11D84BC-A97D-407F-A6AE-4C19F046BC52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D11D84BC-A97D-407F-A6AE-4C19F046BC52}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D11D84BC-A97D-407F-A6AE-4C19F046BC52}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D11D84BC-A97D-407F-A6AE-4C19F046BC52}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A930599F-496C-408B-A10B-9406B3902168}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A930599F-496C-408B-A10B-9406B3902168}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A930599F-496C-408B-A10B-9406B3902168}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A930599F-496C-408B-A10B-9406B3902168}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

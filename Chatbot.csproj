@@ -18,9 +18,4 @@
     <PackageReference Include="System.Linq.Async" Version="6.0.3" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Chatbot.Application\Chatbot.Application.csproj" />
-    <ProjectReference Include="..\Chatbot.Infrastructure\Chatbot.Infrastructure.csproj" />
-  </ItemGroup>
-
 </Project>
