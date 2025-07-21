@@ -11,7 +11,7 @@ namespace Chatbot.Infrastructure.Data
         }
 
         public DbSet<PromptLog> PromptLogs { get; set; }
-        //prompt logları için DbSet tanımlandı.table ismi PromptLogs olacak.Entitiesdeki PromptLog sınıfı ile eşleştirildi.
+        //prompt logları için DbSet tanımladım ve table ismi PromptLogs olacak.Entitiesdeki PromptLog sınıfı ile eşleştirdim...
+        public DbSet<User> Users { get; set; } 
     }
 }
-  
