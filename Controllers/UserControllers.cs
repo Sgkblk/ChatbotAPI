@@ -1,20 +1,24 @@
 ﻿namespace Chatbot.Controllers;
 
 using Chatbot.Domain.Entities;
+using Chatbot.Infrastructure.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using Chatbot.Domain.ViewModels.Dtos;
+using Microsoft.EntityFrameworkCore;
+using static BCrypt.Net.BCrypt;
 
 [ApiController]
 [Route("api/[controller]")]
 public class AuthController : ControllerBase
 {
-    private readonly ChatbotDbContext _context;
+    private readonly PromptDbContext _context;
     private readonly IConfiguration _config;
 
-    public AuthController(ChatbotDbContext context, IConfiguration config)
+    public AuthController(PromptDbContext context, IConfiguration config)
     {
         _context = context;
         _config = config;
@@ -45,7 +49,7 @@ public class AuthController : ControllerBase
         if (user == null || !BCrypt.Net.BCrypt.Verify(dto.Password, user.PasswordHash))
             return Unauthorized("Geçersiz bilgiler");
 
-        var token = GenerateJwtToken(user);
+        var token = GenerateJwtToken(user!);
         return Ok(new { token });
     }
 
