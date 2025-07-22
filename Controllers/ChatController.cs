@@ -1,6 +1,4 @@
-﻿
-
-using Chatbot.Domain.ViewModels;
+﻿using Chatbot.Domain.ViewModels;
 using Chatbot.Infrastructure.Services;
 using Microsoft.AspNetCore.Mvc;
 

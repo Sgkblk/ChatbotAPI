@@ -4,6 +4,7 @@ namespace Chatbot.Infrastructure.Services
 {
     public static class HistoryService
     {
+        //RAM'de tutulan chat geçmişi. Geçicidir.
         private static readonly Dictionary<string, ChatHistory> _chatHistories = new();
         public static ChatHistory GetChatHistory(string connectionId)
         {
